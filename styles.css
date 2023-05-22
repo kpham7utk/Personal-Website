@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.article {
+    margin: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.article-title {
+    font-size: 20px;
+    color: #343a40;
+}
+
+.article-description {
+    color: #495057;
+}
+
+.article-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
