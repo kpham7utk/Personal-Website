@@ -13,8 +13,7 @@ body {
 }
 
 .main {
-    width: 80%;
-    margin: auto;
+    flex: 3;
 }
 
 .article {
@@ -51,30 +50,40 @@ body {
     text-decoration: underline;
 }
 
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.main {
+    flex: 3;
+}
+
 .about-section {
+    flex: 1;
     background-color: #f8f9fa;
     padding: 20px;
-    margin-top: 20px;
+    margin-left: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about-section h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #343a40;
     margin-bottom: 10px;
 }
 
 .about-section p {
-    font-size: 16px;
+    font-size: 14px;
     color: #495057;
     line-height: 1.6;
 }
 
 .about-section img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px; /* This will make the image circular */
-    object-fit: cover; /* This will make sure the image is scaled correctly */
+    width: 100%; /* This will make the image take up the full width of the about-section */
+    height: auto; /* This will maintain the image's aspect ratio */
     margin-top: 20px;
 }
