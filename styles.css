@@ -50,3 +50,31 @@ body {
     color: #0056b3;
     text-decoration: underline;
 }
+
+.about-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; /* This will make the image circular */
+    object-fit: cover; /* This will make sure the image is scaled correctly */
+    margin-top: 20px;
+}
