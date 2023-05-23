@@ -1,14 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+    font-family: 'Press Start 2P', cursive; /* change the font */
+    background-color: #000000; /* change background color to black */
+    color: #FFFFFF; /* change text color to white */
 }
 
 .header {
     text-align: center;
     padding: 20px;
-    background-color: #343a40;
+    background-color: #111111; /* change header color */
+    border-bottom: 3px solid #444444; /* add a border to the header */
     color: white;
 }
 
