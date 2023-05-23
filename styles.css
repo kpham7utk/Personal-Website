@@ -1,33 +1,27 @@
 body {
-    font-family: 'Press Start 2P', cursive; /* change the font */
-    background-color: #000000; /* change background color to black */
-    color: #FFFFFF; /* change text color to white */
+    font-family: 'Press Start 2P', cursive;
+    background-color: #5d26c1; /* Neon Purple */
+    color: #FFFFFF;
 }
 
 .header {
     text-align: center;
     padding: 20px;
-    background-color: #111111; /* change header color */
-    border-bottom: 3px solid #444444; /* add a border to the header */
-    color: white;
+    background-color: #8000ff; /* Bright Violet */
+    border-bottom: 3px solid #bf00ff; /* Electric Purple */
 }
-
 .main {
     flex: 3;
 }
 
 .article {
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #8000ff; /* Bright Violet */
+    border: 2px solid #bf00ff; /* Electric Purple */
 }
 
 .article-title {
     font-size: 22px;
-    color: #343a40;
+    color: #e5e5e5; /* Light Gray for contrast */
     margin-bottom: 10px;
 }
 
@@ -40,7 +34,7 @@ body {
 .article-link {
     display: inline-block;
     margin-top: 15px;
-    color: #007bff;
+    color: #1affa3; /* Neon Mint Green */
     text-decoration: none;
     font-weight: bold;
 }
@@ -63,10 +57,10 @@ body {
 
 .about-section {
     flex: 1;
-    background-color: #f8f9fa;
+    background-color: #8000ff; /* Bright Violet */
+    border: 2px solid #bf00ff; /* Electric Purple */
     padding: 20px;
     margin-left: 20px;
-    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
