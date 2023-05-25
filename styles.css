@@ -1,7 +1,10 @@
 body {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #5d26c1; /* Neon Purple */
-    color: #FFFFFF;
+    background-color: #000000; /* adjust this color as needed */
+    background-image: url('Rose-Waves_7200x3600.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center center;
 }
 
 .header {
