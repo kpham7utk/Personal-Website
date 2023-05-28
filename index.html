@@ -28,21 +28,27 @@
     </div>
 </body>
 <script>
-    fetch('http://localhost:3000/news')
+fetch('https://fetcharticle.azurewebsites.net/api/HttpTrigger1?')
   .then(response => response.json())
   .then(data => {
     const articles = data.articles;
-    for (let article of articles) {
-      // Create and append a new article element for each article
+
+    // Loop over each article and create HTML elements to display it
+    articles.forEach(article => {
       const articleElement = document.createElement('div');
       articleElement.classList.add('article');
-      articleElement.innerHTML = `
-        <div class="article-title">${article.title}</div>
-        <div class="article-description">${article.description}</div>
-        <a href="${article.url}" class="article-link">Read more...</a>
-      `;
-      document.querySelector('.main').append(articleElement);
-    }
+
+      const titleElement = document.createElement('h2');
+      titleElement.textContent = article.title;
+      articleElement.appendChild(titleElement);
+
+      const descriptionElement = document.createElement('p');
+      descriptionElement.textContent = article.description;
+      articleElement.appendChild(descriptionElement);
+
+      // Add the new article element to the DOM
+      document.body.appendChild(articleElement);
+    });
   })
   .catch(error => console.error('Error:', error));
 </script>
