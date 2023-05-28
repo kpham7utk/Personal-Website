@@ -1,6 +1,8 @@
 body {
     font-family: 'Press Start 2P', cursive;
-    background-color: #5d26c1; /* Neon Purple */
+    background-image: url('Rose-Waves_7200x3600.png');
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-size: cover; /* This makes the image cover the entire body */
     color: #FFFFFF;
 }
 
