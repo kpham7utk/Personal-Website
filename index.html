@@ -11,11 +11,6 @@
     <div class="content-wrapper">
         <div class="main">
             <!-- Your main content here -->
-            <div class="article">
-                <div class="article-title">Example Article Title</div>
-                <div class="article-description">This is an example of an article description. It will be a brief summary of the article.</div>
-                <a href="#" class="article-link">Read more...</a>
-            </div>
         </div>
         <div class="about-section">
             <h2>About Me</h2>
@@ -30,8 +25,7 @@
 <script>
 fetch('https://fetcharticle.azurewebsites.net/api/HttpTrigger1?')
   .then(response => response.json())
-  .then(data => {
-    const articles = data.articles;
+  .then(articles => { // Change data to articles as your function is already returning the array of articles
 
     // Loop over each article and create HTML elements to display it
     articles.forEach(article => {
@@ -46,8 +40,13 @@ fetch('https://fetcharticle.azurewebsites.net/api/HttpTrigger1?')
       descriptionElement.textContent = article.description;
       articleElement.appendChild(descriptionElement);
 
+      const linkElement = document.createElement('a');
+      linkElement.href = article.url; // Adding the article link
+      linkElement.textContent = "Read more...";
+      articleElement.appendChild(linkElement);
+
       // Add the new article element to the DOM
-      document.body.appendChild(articleElement);
+      document.querySelector('.main').appendChild(articleElement); // Append to .main class
     });
   })
   .catch(error => console.error('Error:', error));
