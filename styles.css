@@ -3,6 +3,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #a8c2cf; /* Light, cool blue */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 .header {
@@ -68,13 +72,13 @@ body {
 }
 
 .about-section h2 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #c5635b; /* Salmon red */
-    margin-bottom: 10px;
+    margin-bottom: .5em;
 }
 
 .about-section p {
-    font-size: 14px;
+    font-size: 1em;
     color: #a8c2cf; /* Light, cool blue */
     line-height: 1.6;
 }
