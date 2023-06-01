@@ -1,32 +1,34 @@
 body {
     background-image: url('https://kphampersonalwebsite.blob.core.windows.net/$web/Rose-Waves_7200x3600.png');
-    background-repeat: no-repeat; /* This prevents the image from repeating */
-    background-size: cover; /* This makes the image cover the entire body */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #a8c2cf; /* Light, cool blue */
 }
 
 .header {
     text-align: center;
     padding: 20px;
-    background-color: #8000ff; /* Bright Violet */
-    border-bottom: 3px solid #bf00ff; /* Electric Purple */
+    background-color: #6b4744; /* Warm, dark brown */
+    border-bottom: 3px solid #1e211b; /* Black */
 }
+
 .main {
     flex: 3;
 }
 
 .article {
-    background-color: #8000ff; /* Bright Violet */
-    border: 2px solid #bf00ff; /* Electric Purple */
+    background-color: #6b4744; /* Warm, dark brown */
+    border: 2px solid #1e211b; /* Black */
 }
 
 .article-title {
     font-size: 22px;
-    color: #e5e5e5; /* Light Gray for contrast */
+    color: #c5635b; /* Salmon red for title contrast */
     margin-bottom: 10px;
 }
 
 .article-description {
-    color: #495057;
+    color: #a8c2cf; /* Light, cool blue */
     font-size: 16px;
     line-height: 1.6;
 }
@@ -34,19 +36,20 @@ body {
 .article-link {
     display: inline-block;
     margin-top: 15px;
-    color: #1affa3; /* Neon Mint Green */
+    color: #88a7be; /* Muted blue */
     text-decoration: none;
     font-weight: bold;
 }
 
 .article-link:hover {
-    color: #0056b3;
+    color: #5482a3; /* Darker blue */
     text-decoration: underline;
 }
 
 .content-wrapper {
     display: flex;
     justify-content: space-between;
+	align-items: flex-start;
     width: 80%;
     margin: auto;
 }
@@ -57,8 +60,8 @@ body {
 
 .about-section {
     flex: 1;
-    background-color: #8000ff; /* Bright Violet */
-    border: 2px solid #bf00ff; /* Electric Purple */
+    background-color: #6b4744; /* Warm, dark brown */
+    border: 2px solid #1e211b; /* Black */
     padding: 20px;
     margin-left: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -66,18 +69,18 @@ body {
 
 .about-section h2 {
     font-size: 20px;
-    color: #343a40;
+    color: #c5635b; /* Salmon red */
     margin-bottom: 10px;
 }
 
 .about-section p {
     font-size: 14px;
-    color: #495057;
+    color: #a8c2cf; /* Light, cool blue */
     line-height: 1.6;
 }
 
 .about-section img {
-    width: 100%; /* This will make the image take up the full width of the about-section */
-    height: auto; /* This will maintain the image's aspect ratio */
+    width: 100%;
+    height: auto;
     margin-top: 20px;
 }
